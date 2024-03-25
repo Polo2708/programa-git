@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Registro de usuarios</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">CRUD Registro de usuarioss</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Otros</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div class="container my -3">
+      <div class="row">
+        <!--Registro-->
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 bg-white">
+          <h2 class="text-center">Registro de usuarios</h2>
+          <form action="">
+            <div class="mb-3">
+               <label for="Nombre" class="form-label">Nombre</label>
+               <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+                <label for="Apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="Apellido" placeholder="Apellido">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="d-grid gap-2">
+                <button class="btn btn-success" type="button">Guardar</button>
+                <button class="btn btn-secondary" type="button">Limpiar</button>
+              </div>
+              <br>
+            
+          </form>
+        </div>
+        <!--Lista de estudiantes-->
+        <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 bg-white">
+          <h2 class="text-center">Lista de usuarios</h2>
+            <table class="table table-striped table-hover  ">
+                <thead>
+                <tr>
+                    <th class="centrado=">id</th>
+                    <th class="centrado">Nombre</th>
+                    <th class="centrado">Apellido</th>
+                    <th class="centrado">Email</th>
+                    <th class="centrado">edit</th>
+                    <th class="centrado">delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="centrado">1</td>
+                    <td class="centrado">Onaldo</td>
+                    <td class="centrado">Polo</td>
+                    <td class="centrado">onaldo128@gmail.com</td>
+                    <td class="centrado">editar</td>
+                    <td class="centrado">eliminar</td>
+                </tr>
+                <tr>
+                    <td class="centrado">2</td>
+                    <td class="centrado">Sandra</td>
+                    <td class="centrado">Polo</td>
+                    <td class="centrado">Sandra.polo@gmail.com</td>
+                    <td class="centrado">editar</td>
+                    <td class="centrado">eliminar</td>
+                </tr>
+                </tbody>
+            </table>
+         </div>
+          
+          </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
